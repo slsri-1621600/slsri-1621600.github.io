@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Tags Builder Original Work</title>
+        <link rel="stylesheet" type="text/css" href="anExternal.css">
+        <style>
+            p {
+                font-family: Lucinda Sans;
+                font-size: 20px;
+            }
+
+            .container {
+                position: relative;
+                text-align: center;
+                color: white;
+            }
+
+            .centered {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Level 1: Newbie</h1>
+            <h3>Two paragraphs that each have a different font</h3>
+                <p>This is my first paragraph. It has the Lucinda Sans font, which was set in the internal style element in the head section.</p>
+                <p style="font-family: Georgia;">This is my second paragraph. It has the Georgia font. This was set inline using the style attribute.</P> 
+                <br>
+            <h3>Two pictures that were originally different sizes, resized to 50px by 50px</h3>
+                <img src="https://images.squarespace-cdn.com/content/v1/5d7023b2c0251500010cc02d/1571130527758-FEPWREIEYKBPIBIH9KST/ke17ZwdGBToddI8pDm48kNMLiJYFdvoEyzLllGymNmd7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0rQeu_A0VlcGJEiWdfSJ_zUSv9xKO0rW1qlUEGFB9iZAkGAqsgQbR5Ch_qcuKWnbQQ/DSC_0014%2B%25283%2529.jpg?format=1500w" title="Picture of Me" style="width:50x;height:50px;margin:5px">
+                <img src="HCDE_image.jpg" title="UW HCDE Logo" style="width:50x;height:50px;margin:5px">
+                <br>
+            <h3>One  unique CSS command that was not discussed in the workshop</h3>
+                <p style="font-weight: 900;">This paragraph has a different font weight, which is a CSS command that was not discussed in the workshop.</p>
+            <br>   
+        <h1>Level 2: Apprentice</h1>
+            <h3>Text that is centered on a photo</h3>
+                <div class="container">
+                    <img src="beachInMaldives.jpg" title="Maldives Beach" style="width:250px;">
+                    <div class="centered">Maldives Beach</div>
+                </div>
+            <h3>A photo with 20 pixel margins on each side</h3>
+                <img src="sunriseInMaldives.jpg" title="Sunrise in Maldives" style="width:100px;margin: 20px;">
+            <h3>Text with a border that uses dotted lines</h3>
+                <p style="border: dotted">This text has a dotted line border</p>
+            <br>
+        <h1>Level 3: Master</h1>
+            <h3>An external style sheet</h3>
+                <p>There is an external css style sheet called anExternal.css linked to this html page in the head.</p>
+            <h3>A floated element</h3>
+                <h6>This h6 element is floated to the right</h6>
+                <p> Since the h6 element is floated to the right, this paragraph appears to the left of it.</p>
+            <h3>An element with rounded border corners</h3>
+                <h5>An h5 element with rounded border corners and cadetblue background</h5>
+    </body>
+</html>
