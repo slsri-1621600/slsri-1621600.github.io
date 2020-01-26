@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+    <head>
+        <title> Original Work: Job Application </title>
+    </head>
+    <body>
+    <h1>Job Application</h1>
+        <form>
+            <fieldset>
+                <legend>Account Details</legend>
+                    <div class="field">
+                        First name: <input type="text" name="firstname">
+                        <br> 
+                        Last name: <input type="text" name="lastname">
+                        <br>
+                        Email: <input type="text" name="email">
+                        <br>
+                    <div>
+            </fieldset>
+            <br>
+            <br>
+            <fieldset>
+                <legend>Job Information</legend>
+                    <div class="field">
+                        What job are you applying for? Please copy and paste job ID from job listing. <input type="text" name="jobname">
+                        <br>
+                        Why do you want this job? 
+                        <button type="button" onclick="alert('Please email your questions to the email address listed on the job description.')">I have questions about this job</button>
+                        <br>
+                        <textarea name="jobessay" style="width:800px; height:500px"></textarea>
+                        <br>
+                        Which of the following degrees do you have? Please select all that apply (hold down the shift button on your keyboard to select multiple options).
+                        <select name="degree" size="5" multiple> 
+                            <option value="highschool">High School Diploma</option> 
+                            <option value="undergrad">Undergraduate Degree</option> 
+                            <option value="masters">Masters Degree</option> 
+                            <option value="phd">PhD</option> 
+                            <option value="other">Other</option> 
+                        </select>
+                    </div>
+            </fieldset>
+            <br>
+            <br>
+            <fieldset>
+                <legend>Location and Legal Availability</legend>
+                    <div class="field">
+                        Are you willing to relocate if needed?
+                        <br>
+                        <input type="radio" name="relocation" value="yes"> Yes
+                        <input type="radio" name="relocation" value="no"> No
+                        <input type="radio" name="relocation" value="maybe"> Maybe
+                        <br>
+                        <br>
+                        Which locations would you prefer?
+                        <br>
+                        <input type="checkbox" name="location" value="Seattle">Seattle
+                        <input type="checkbox" name="location" value="San Diego">San Diego
+                        <input type="checkbox" name="location" value="Los Angeles">Los Angeles
+                        <input type="checkbox" name="location" value="Chicago">Chicago
+                        <input type="checkbox" name="location" value="New York">New York
+                        <br>
+                        <br>
+                        Are you currently able to be employed in the United States?
+                        <select name="employment"> 
+                            <option value="Yes">Yes</option> 
+                            <option value="No">No</option> 
+                        </select>
+                    </div>
+            </fieldset>
+            <br>
+            <br>
+            <fieldset>
+                <legend>Extra Information</legend>
+                    <div class="field">
+                        How did you first hear about this company? 
+                        <input list="marketingmethods" name="marketing">
+                        <datalist id="marketingmethods">
+                          <option value="Recruiter">
+                          <option value="Flyer">
+                          <option value="Social Media">
+                          <option value="Friends or Family">
+                          <option value="Other">
+                        </datalist>  
+                    </div>
+            </fieldset>
+            <br>
+            <br>
+            <input type="submit" value="Submit Form">
+            <form name="input" action="html_form_action_jobapplication.asp" method="post"></form>
+        </form>
+    </body>
+</html>
